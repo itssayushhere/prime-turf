@@ -52,9 +52,12 @@ const Facilities = () => {
         {/* Header Section */}
         <div className="text-center mb-20">
           <div className="inline-block mb-4">
-            <span className="px-6 py-2 bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-full text-green-400 text-sm font-semibold tracking-wide uppercase">
+            <div className="px-6 py-2 bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-full text-green-400 text-sm font-semibold tracking-wide uppercase">
+            <span>
+
               Premium Sports Facilities
             </span>
+            </div>
           </div>
           <h2 
             data-aos="fade-down"
@@ -72,7 +75,7 @@ const Facilities = () => {
             Experience world-class sports facilities designed for peak performance and enjoyment. 
             Every detail crafted to elevate your game.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8 flex flex-row flex-wrap justify-center gap-4">
             <div className="text-center px-6 py-3 bg-gray-800/50 rounded-xl border border-green-500/20">
               <div className="text-3xl font-bold text-green-400">4+</div>
               <div className="text-sm text-gray-400">Sports Facilities</div>

@@ -95,14 +95,14 @@ const Contact = () => {
 
                 {/* Email */}
                 <div className="flex items-start group hover:translate-x-2 transition-transform duration-300">
-                  <div className="min-w-[3rem] bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4 shadow-lg">
+                  <div className=" bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4 shadow-lg">
                     <span className="text-black text-lg">✉️</span>
                   </div>
                   <div>
                     <p className="font-semibold text-green-400 mb-1">Email</p>
                     <a
                       href="mailto:Primeenterprise317@gmail.com"
-                      className="text-gray-300 text-sm sm:text-base hover:text-green-400"
+                      className="text-gray-300 text-sm sm:text-base text-wrap flex flex-row hover:text-green-400"
                     >
                       Primeenterprise317@gmail.com
                     </a>
