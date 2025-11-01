@@ -116,7 +116,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12"
         >
           <a
-            href="#booking"
+            href="#contact"
             className="group relative px-8 sm:px-12 py-4 sm:py-5 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-bold text-base sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-green-500/50 overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
