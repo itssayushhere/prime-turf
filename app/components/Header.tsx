@@ -29,7 +29,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const phoneNumber = '7666555765';
+  const phoneNumber = '7208018763';
   const whatsappLink = `https://wa.me/91${phoneNumber}`;
   const callLink = `tel:+91${phoneNumber}`;
 
