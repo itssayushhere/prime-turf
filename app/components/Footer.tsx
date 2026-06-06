@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-              Prime Turf Saki Vihar
+              P.R Turf And Sports Saki Vihar
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               Mumbai's premier sports facility offering world-class turf for football, cricket, pickleball, and more.
@@ -125,7 +125,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-gray-400">
-            © 2024 Prime Turf Saki Vihar. All rights reserved.
+            © 2024 P.R Turf And Sports Saki Vihar. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#privacy" className="text-sm text-gray-400 hover:text-green-400 transition-colors">

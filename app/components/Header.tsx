@@ -71,7 +71,7 @@ const Header = () => {
               >
                 <Image
                   src="/images/logo.jpeg"
-                  alt="Prime Turf logo"
+                  alt="P.R Turf And Sports logo"
                   width={56}
                   height={56}
                   priority
@@ -84,7 +84,7 @@ const Header = () => {
                     scrolled ? "text-base sm:text-xl" : "text-lg sm:text-2xl"
                   }`}
                 >
-                  Prime Turf
+                  P.R Turf And Sports
                 </span>
                 <span className="text-[9px] sm:text-xs text-gray-400 font-medium -mt-1">
                   Saki Vihar, Mumbai
