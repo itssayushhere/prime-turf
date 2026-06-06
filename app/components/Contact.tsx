@@ -23,7 +23,7 @@ const Contact = () => {
   const whatsappLink = `https://wa.me/91${phoneNumber}`;
   const callLink = `tel:+91${phoneNumber}`;
   const mapsLink =
-    'https://www.google.com/maps?q=Prime+Turf,+Building+no+5,+Akshay+Mittal,+C+Wing,+Mittal+Industrial+Estate,+Marol,+Andheri,+Mumbai,+Maharashtra+400059';
+    'https://www.google.com/maps/dir//PR+Turf+%26+Sports,+Ansa+Industrial+Estate,+C+wing,+Saki+Vihar+Rd,+Ansa+Industrial+Estate,+Chandivali,+Sakinaka,+Mumbai,+Maharashtra+400072/@19.0815074,72.8783527,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c91e9bdade17:0x4dffaa4771ede33e!2m2!1d72.8884739!2d19.1104138?hl=en-in&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D';
 
   return (
     <section
@@ -70,7 +70,7 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-green-400 mb-1">Address</p>
                     <p className="text-gray-300 text-sm sm:text-base">
-                      Prime Turf, Building no 5, Akshay Mittal, C Wing, Mittal Industrial Estate, Marol, Andheri, Mumbai, Maharashtra 400059
+                      Ansa Industrial Estate, C wing, Saki Vihar Rd, Ansa Industrial Estate, Chandivali, Sakinaka, Mumbai, Maharashtra 400072
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ const Contact = () => {
               </h4>
               <div className="aspect-video bg-gray-950 rounded-xl border border-green-500/10 overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps?q=Prime+Turf,+Building+no+5,+Akshay+Mittal,+C+Wing,+Mittal+Industrial+Estate,+Marol,+Andheri,+Mumbai,+Maharashtra+400059&output=embed"
+                  src="https://www.google.com/maps/dir//PR+Turf+%26+Sports,+Ansa+Industrial+Estate,+C+wing,+Saki+Vihar+Rd,+Ansa+Industrial+Estate,+Chandivali,+Sakinaka,+Mumbai,+Maharashtra+400072/@19.0815074,72.8783527,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c91e9bdade17:0x4dffaa4771ede33e!2m2!1d72.8884739!2d19.1104138?hl=en-in&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

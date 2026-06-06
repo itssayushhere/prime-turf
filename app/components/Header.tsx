@@ -87,7 +87,7 @@ const Header = () => {
                   Prime Turf
                 </span>
                 <span className="text-[9px] sm:text-xs text-gray-400 font-medium -mt-1">
-                  Marol, Mumbai
+                  Saki Vihar, Mumbai
                 </span>
               </div>
             </a>
@@ -196,7 +196,7 @@ const Header = () => {
               {/* Mobile Menu Footer */}
               <div className="mt-6 pt-6 border-t border-green-500/20 text-center sm:text-left">
                 <div className="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-gray-500 gap-2">
-                  <span>📍 Marol, Andheri East</span>
+                  <span>📍 Saki Vihar, Andheri East</span>
                   <a href={callLink} className="text-gray-300 hover:text-green-400">
                         Call: +91 {phoneNumber}
                       </a>

@@ -9,7 +9,7 @@ const Testimonials = () => {
       role: 'Football Coach',
       image: '/testimonial1.jpg',
       rating: 5,
-      text: 'Prime Turf Marol has transformed our training sessions. The quality of the turf and facilities is outstanding. Highly recommended!'
+      text: 'Prime Turf Saki Vihar has transformed our training sessions. The quality of the turf and facilities is outstanding. Highly recommended!'
     },
     {
       name: 'Priya Patel',
@@ -23,7 +23,7 @@ const Testimonials = () => {
       role: 'Pickleball Player',
       image: '/testimonial3.jpg',
       rating: 5,
-      text: 'Love the new pickleball courts! Well-maintained and great atmosphere. Prime Turf is the best in Marol.'
+      text: 'Love the new pickleball courts! Well-maintained and great atmosphere. Prime Turf is the best in Saki Vihar.'
     }
   ];
 

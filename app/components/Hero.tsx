@@ -12,7 +12,7 @@ const Hero = () => {
     {
       image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&h=1080&fit=crop',
       title: 'Experience Premier Sports Turf',
-      subtitle: 'World-class facilities in the heart of Marol'
+      subtitle: 'World-class facilities in the heart of Saki Vihar'
     },
     {
       image: 'https://images.unsplash.com/photo-1459865264687-595d652de67e?w=1920&h=1080&fit=crop',

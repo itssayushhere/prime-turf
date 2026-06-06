@@ -13,19 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prime Turf Marol - Premier Sports Facility in Mumbai",
-  description: "Experience world-class sports facilities at Prime Turf Marol. Book football, cricket, pickleball courts and more in Andheri East, Mumbai. Professional-grade turf with excellent amenities.",
-  keywords: "sports turf, football field, cricket pitch, pickleball courts, sports facility, Mumbai, Marol, Andheri East, book sports venue",
-  authors: [{ name: "Prime Turf Marol" }],
+  title: "Prime Turf Saki Vihar - Premier Sports Facility in Mumbai",
+  description: "Experience world-class sports facilities at Prime Turf Saki Vihar. Book football, cricket, pickleball courts and more in Andheri East, Mumbai. Professional-grade turf with excellent amenities.",
+  keywords: "sports turf, football field, cricket pitch, pickleball courts, sports facility, Mumbai, Saki Vihar, Andheri East, book sports venue",
+  authors: [{ name: "Prime Turf Saki Vihar" }],
   openGraph: {
-    title: "Prime Turf Marol - Premier Sports Facility",
-    description: "World-class sports facilities for football, cricket, pickleball and more in Mumbai's Marol area.",
+    title: "Prime Turf Saki Vihar - Premier Sports Facility",
+    description: "World-class sports facilities for football, cricket, pickleball and more in Mumbai's Saki Vihar area.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prime Turf Marol - Premier Sports Facility",
+    title: "Prime Turf Saki Vihar - Premier Sports Facility",
     description: "World-class sports facilities in Mumbai. Book your slot today!",
   },
   robots: {

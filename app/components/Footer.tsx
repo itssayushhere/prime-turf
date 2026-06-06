@@ -7,8 +7,8 @@ const Footer = () => {
   const phoneNumber = '7208018763';
   const whatsappLink = `https://wa.me/91${phoneNumber}`;
   const callLink = `tel:+91${phoneNumber}`;
-  const emailLink = 'mailto:contact@primeturfmarol.com';
-  const mapsLink = 'https://www.google.com/maps?q=Prime+Turf,+Building+no+5,+Akshay+Mittal,+C+Wing,+Mittal+Industrial+Estate,+Marol,+Andheri,+Mumbai,+Maharashtra+400059';
+  const emailLink = 'mailto:Primeenterprise317@gmail.com';
+  const mapsLink = 'https://www.google.com/maps/dir//PR+Turf+%26+Sports,+Ansa+Industrial+Estate,+C+wing,+Saki+Vihar+Rd,+Ansa+Industrial+Estate,+Chandivali,+Sakinaka,+Mumbai,+Maharashtra+400072/@19.0815074,72.8783527,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c91e9bdade17:0x4dffaa4771ede33e!2m2!1d72.8884739!2d19.1104138?hl=en-in&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D';
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 border-t-2 border-green-500">
@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-              Prime Turf Marol
+              Prime Turf Saki Vihar
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               Mumbai's premier sports facility offering world-class turf for football, cricket, pickleball, and more.
@@ -74,7 +74,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition-colors"
                 >
-                  Building no 5, Akshay Mittal, C Wing, Mittal Industrial Estate, Marol, Andheri, Mumbai, Maharashtra 400059
+                  Building no 5, Akshay Mittal, C Wing, Mittal Industrial Estate, Saki Vihar, Andheri, Mumbai, Maharashtra 400059
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-gray-300">
@@ -86,7 +86,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-5 h-5 text-green-500 flex-shrink-0" />
                 <a href={emailLink} className="hover:text-green-400 transition-colors">
-                  contact@primeturfmarol.com
+                  contact@primeturfSaki Vihar.com
                 </a>
               </li>
             </ul>
@@ -125,7 +125,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-gray-400">
-            © 2024 Prime Turf Marol. All rights reserved.
+            © 2024 Prime Turf Saki Vihar. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#privacy" className="text-sm text-gray-400 hover:text-green-400 transition-colors">
