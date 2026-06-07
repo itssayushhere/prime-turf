@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
-import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK, MAPS_LINK, ADDRESS, EMAIL_LINK } from '../constants';
+import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK, MAPS_LINK, ADDRESS, EMAIL_LINK, EMAIL } from '../constants';
 
 const Footer = () => {
   
@@ -83,7 +83,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-5 h-5 text-green-500 flex-shrink-0" />
                 <a href={EMAIL_LINK} className="hover:text-green-400 transition-colors">
-                  contact@primeturfSaki Vihar.com
+                  {EMAIL}
                 </a>
               </li>
             </ul>

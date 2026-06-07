@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK, MAPS_LINK, ADDRESS, EMAIL, EMAIL_LINK } from '../constants';
+import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK, MAPS_LINK, ADDRESS, EMAIL, EMAIL_LINK, MAPS_EMBED_SRC } from '../constants';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -115,14 +115,7 @@ const Contact = () => {
                 Location
               </h4>
               <div className="aspect-video bg-gray-950 rounded-xl border border-green-500/10 overflow-hidden">
-                <iframe
-                  src="https://maps.app.goo.gl/2NozLJxKF8dxyM33A?g_st=aw&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                ></iframe>
+                <iframe src={MAPS_EMBED_SRC} width="100%" height="100%"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
