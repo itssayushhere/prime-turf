@@ -9,7 +9,7 @@ const Testimonials = () => {
       role: 'Football Coach',
       image: '/testimonial1.jpg',
       rating: 5,
-      text: 'P.R Turf And Sports Saki Vihar has transformed our training sessions. The quality of the turf and facilities is outstanding. Highly recommended!'
+      text: 'PR Turf And Sports Saki Vihar has transformed our training sessions. The quality of the turf and facilities is outstanding. Highly recommended!'
     },
     {
       name: 'Priya Patel',
@@ -23,7 +23,7 @@ const Testimonials = () => {
       role: 'Pickleball Player',
       image: '/testimonial3.jpg',
       rating: 5,
-      text: 'Love the new pickleball courts! Well-maintained and great atmosphere. P.R Turf And Sports is the best in Saki Vihar.'
+      text: 'Love the new pickleball courts! Well-maintained and great atmosphere. PR Turf And Sports is the best in Saki Vihar.'
     }
   ];
 

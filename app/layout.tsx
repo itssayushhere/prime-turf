@@ -13,19 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "P.R Turf And Sports Saki Vihar - Premier Sports Facility in Mumbai",
-  description: "Experience world-class sports facilities at P.R Turf And Sports Saki Vihar. Book football, cricket, pickleball courts and more in Andheri East, Mumbai. Professional-grade turf with excellent amenities.",
+  title: "PR Turf And Sports Saki Vihar - Premier Sports Facility in Mumbai",
+  description: "Experience world-class sports facilities at PR Turf And Sports Saki Vihar. Book football, cricket, pickleball courts and more in Andheri East, Mumbai. Professional-grade turf with excellent amenities.",
   keywords: "sports turf, football field, cricket pitch, pickleball courts, sports facility, Mumbai, Saki Vihar, Andheri East, book sports venue",
-  authors: [{ name: "P.R Turf And Sports Saki Vihar" }],
+  authors: [{ name: "PR Turf And Sports Saki Vihar" }],
   openGraph: {
-    title: "P.R Turf And Sports Saki Vihar - Premier Sports Facility",
+    title: "PR Turf And Sports Saki Vihar - Premier Sports Facility",
     description: "World-class sports facilities for football, cricket, pickleball and more in Mumbai's Saki Vihar area.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "P.R Turf And Sports Saki Vihar - Premier Sports Facility",
+    title: "PR Turf And Sports Saki Vihar - Premier Sports Facility",
     description: "World-class sports facilities in Mumbai. Book your slot today!",
   },
   robots: {

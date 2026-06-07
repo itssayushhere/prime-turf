@@ -70,7 +70,7 @@ const features = [
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 px-4"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-green-600">
-              P.R Turf And Sports Saki Vihar
+              PR Turf And Sports Saki Vihar
             </span>
           </h2>
           <div 
@@ -98,7 +98,7 @@ const features = [
                 data-aos-delay="300"
                 className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed"
               >
-                P.R Turf And Sports Saki Vihar is Mumbai's premier sports facility, offering state-of-the-art turf for football, cricket, pickleball, and various other sports. Established with a vision to provide top-quality sports infrastructure, we cater to athletes of all levels.
+                PR Turf And Sports Saki Vihar is Mumbai's premier sports facility, offering state-of-the-art turf for football, cricket, pickleball, and various other sports. Established with a vision to provide top-quality sports infrastructure, we cater to athletes of all levels.
               </p>
               <p 
                 data-aos="fade-right"

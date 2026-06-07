@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK } from "../constants";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +29,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const phoneNumber = '7208018763';
-  const whatsappLink = `https://wa.me/91${phoneNumber}`;
-  const callLink = `tel:+91${phoneNumber}`;
 
   const navLinks = [
     { href: "#home", label: "Home", icon: "🏠" },
@@ -71,7 +68,7 @@ const Header = () => {
               >
                 <Image
                   src="/images/logo.jpeg"
-                  alt="P.R Turf And Sports logo"
+                  alt="PR Turf And Sports logo"
                   width={56}
                   height={56}
                   priority
@@ -84,7 +81,7 @@ const Header = () => {
                     scrolled ? "text-base sm:text-xl" : "text-lg sm:text-2xl"
                   }`}
                 >
-                  P.R Turf And Sports
+                  PR Turf And Sports
                 </span>
                 <span className="text-[9px] sm:text-xs text-gray-400 font-medium -mt-1">
                   Saki Vihar, Mumbai
@@ -197,11 +194,11 @@ const Header = () => {
               <div className="mt-6 pt-6 border-t border-green-500/20 text-center sm:text-left">
                 <div className="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-gray-500 gap-2">
                   <span>📍 Saki Vihar, Andheri East</span>
-                  <a href={callLink} className="text-gray-300 hover:text-green-400">
-                        Call: +91 {phoneNumber}
+                  <a href={CALL_LINK} className="text-gray-300 hover:text-green-400">
+                        Call: +91 {PHONE_NUMBER}
                       </a>
-                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
-                        WhatsApp: +91 {phoneNumber}
+                      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
+                        WhatsApp: +91 {PHONE_NUMBER}
                       </a>
                 </div>
               </div>

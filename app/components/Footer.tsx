@@ -2,13 +2,10 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK, MAPS_LINK, ADDRESS, EMAIL_LINK } from '../constants';
 
 const Footer = () => {
-  const phoneNumber = '7208018763';
-  const whatsappLink = `https://wa.me/91${phoneNumber}`;
-  const callLink = `tel:+91${phoneNumber}`;
-  const emailLink = 'mailto:Primeenterprise317@gmail.com';
-  const mapsLink = 'https://www.google.com/maps/dir//PR+Turf+%26+Sports,+Ansa+Industrial+Estate,+C+wing,+Saki+Vihar+Rd,+Ansa+Industrial+Estate,+Chandivali,+Sakinaka,+Mumbai,+Maharashtra+400072/@19.0815074,72.8783527,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c91e9bdade17:0x4dffaa4771ede33e!2m2!1d72.8884739!2d19.1104138?hl=en-in&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D';
+  
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white py-16 border-t-2 border-green-500">
@@ -17,7 +14,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-3xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">
-              P.R Turf And Sports Saki Vihar
+              PR Turf And Sports Saki Vihar
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               Mumbai's premier sports facility offering world-class turf for football, cricket, pickleball, and more.
@@ -69,23 +66,23 @@ const Footer = () => {
               <li className="flex items-start space-x-3 text-gray-300">
                 <MapPin className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                 <a 
-                  href={mapsLink}
+                  href={MAPS_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition-colors"
                 >
-                  Building no 5, Akshay Mittal, C Wing, Mittal Industrial Estate, Saki Vihar, Andheri, Mumbai, Maharashtra 400059
+                  {ADDRESS}
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-gray-300">
                 <Phone className="w-5 h-5 text-green-500 flex-shrink-0" />
-                <a href={callLink} className="hover:text-green-400 transition-colors">
-                  +91 {phoneNumber}
+                <a href={CALL_LINK} className="hover:text-green-400 transition-colors">
+                  +91 {PHONE_NUMBER}
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail className="w-5 h-5 text-green-500 flex-shrink-0" />
-                <a href={emailLink} className="hover:text-green-400 transition-colors">
+                <a href={EMAIL_LINK} className="hover:text-green-400 transition-colors">
                   contact@primeturfSaki Vihar.com
                 </a>
               </li>
@@ -100,14 +97,14 @@ const Footer = () => {
             </h4>
             <div className="space-y-3">
               <a
-                href={callLink}
+                href={CALL_LINK}
                 className="flex items-center space-x-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 px-4 py-3 rounded-lg transition-all shadow-lg hover:shadow-green-500/50 transform hover:scale-105"
               >
                 <Phone className="w-5 h-5" />
                 <span className="font-semibold">Call Now</span>
               </a>
               <a
-                href={whatsappLink}
+                href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 px-4 py-3 rounded-lg transition-all shadow-lg hover:shadow-green-400/50 transform hover:scale-105"
@@ -125,7 +122,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-gray-400">
-            © 2024 P.R Turf And Sports Saki Vihar. All rights reserved.
+            © 2024 PR Turf And Sports Saki Vihar. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#privacy" className="text-sm text-gray-400 hover:text-green-400 transition-colors">

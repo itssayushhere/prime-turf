@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { PHONE_NUMBER, WHATSAPP_LINK, CALL_LINK, MAPS_LINK, ADDRESS, EMAIL, EMAIL_LINK } from '../constants';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,11 +20,7 @@ const Contact = () => {
     alert('Thank you for your message! We will get back to you soon.');
   };
 
-  const phoneNumber = '7208018763';
-  const whatsappLink = `https://wa.me/91${phoneNumber}`;
-  const callLink = `tel:+91${phoneNumber}`;
-  const mapsLink =
-    'https://www.google.com/maps/dir//PR+Turf+%26+Sports,+Ansa+Industrial+Estate,+C+wing,+Saki+Vihar+Rd,+Ansa+Industrial+Estate,+Chandivali,+Sakinaka,+Mumbai,+Maharashtra+400072/@19.0815074,72.8783527,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c91e9bdade17:0x4dffaa4771ede33e!2m2!1d72.8884739!2d19.1104138?hl=en-in&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D';
+
 
   return (
     <section
@@ -62,7 +59,7 @@ const Contact = () => {
                 {/* Address */}
                 <div
                   className="flex items-start group hover:translate-x-2 transition-transform duration-300 cursor-pointer"
-                  onClick={() => window.open(mapsLink, '_blank')}
+                  onClick={() => window.open(MAPS_LINK, '_blank')}
                 >
                   <div className="min-w-[3rem] bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4 shadow-lg">
                     <span className="text-black text-lg">📍</span>
@@ -70,7 +67,7 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-green-400 mb-1">Address</p>
                     <p className="text-gray-300 text-sm sm:text-base">
-                      Ansa Industrial Estate, C wing, Saki Vihar Rd, Ansa Industrial Estate, Chandivali, Sakinaka, Mumbai, Maharashtra 400072
+                      {ADDRESS}
                     </p>
                   </div>
                 </div>
@@ -83,11 +80,11 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-green-400 mb-1">Phone</p>
                     <div className="flex flex-col text-sm sm:text-base">
-                      <a href={callLink} className="text-gray-300 hover:text-green-400">
-                        Call: +91 {phoneNumber}
+                      <a href={CALL_LINK} className="text-gray-300 hover:text-green-400">
+                        Call: +91 {PHONE_NUMBER}
                       </a>
-                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
-                        WhatsApp: +91 {phoneNumber}
+                      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
+                        WhatsApp: +91 {PHONE_NUMBER}
                       </a>
                     </div>
                   </div>
@@ -101,10 +98,10 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-green-400 mb-1">Email</p>
                     <a
-                      href="mailto:Primeenterprise317@gmail.com"
+                      href={EMAIL_LINK}
                       className="text-gray-300 text-sm sm:text-base text-wrap flex flex-row hover:text-green-400"
                     >
-                      Primeenterprise317@gmail.com
+                      {EMAIL}
                     </a>
                   </div>
                 </div>
@@ -119,7 +116,7 @@ const Contact = () => {
               </h4>
               <div className="aspect-video bg-gray-950 rounded-xl border border-green-500/10 overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/dir//PR+Turf+%26+Sports,+Ansa+Industrial+Estate,+C+wing,+Saki+Vihar+Rd,+Ansa+Industrial+Estate,+Chandivali,+Sakinaka,+Mumbai,+Maharashtra+400072/@19.0815074,72.8783527,11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7c91e9bdade17:0x4dffaa4771ede33e!2m2!1d72.8884739!2d19.1104138?hl=en-in&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D&output=embed"
+                  src="https://maps.app.goo.gl/2NozLJxKF8dxyM33A?g_st=aw&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
