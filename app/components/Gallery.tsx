@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 
 const Gallery = () => {
   const galleryItems = [
-     {
+    {
       src: 'https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&h=800&fit=crop',
       alt: 'Football match in progress',
       title: 'Football Match',
@@ -49,25 +49,24 @@ const Gallery = () => {
       alt: 'Equipment storage',
       title: 'Equipment Area',
     },
-    
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#010409] to-[#0B0B1A] py-12">
-      <div className="text-center mb-10">
-        <button className="px-4 py-1 text-xs font-semibold text-white bg-green-700 rounded-full">
-          OUR MOMENTS
-        </button>
-        <h2 className="text-4xl font-bold text-green-500 mt-4">Gallery</h2>
-        <p className="text-gray-400 mt-2">
+    <section className="bg-gradient-to-b from-black to-gray-950 py-16">
+      <div className="text-center mb-12">
+        <span className="px-4 py-1.5 text-xs font-semibold text-gray-300 bg-white/5 border border-white/15 rounded-full uppercase tracking-wider">
+          Our Moments
+        </span>
+        <h2 className="text-4xl font-bold text-white mt-5 mb-2">Gallery</h2>
+        <p className="text-gray-500 mt-2 text-base">
           Experience our vibrant community in action
         </p>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-6xl mx-auto px-8">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
+          spaceBetween={24}
           slidesPerView={2}
           loop={true}
           autoplay={{
@@ -90,15 +89,18 @@ const Gallery = () => {
         >
           {galleryItems.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-2xl overflow-hidden shadow-lg bg-black/50 hover:scale-[1.02] transition-all duration-300">
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="w-full h-[280px] md:h-[320px] object-cover"
-                />
-                <div className="p-4 text-white">
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-gray-400 text-sm">{item.alt}</p>
+              <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/10 hover:border-white/25 hover:scale-[1.02] transition-all duration-300 group">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full h-[280px] md:h-[320px] object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div className="p-4 text-white border-t border-white/5">
+                  <h3 className="font-semibold text-base text-gray-100">{item.title}</h3>
+                  <p className="text-gray-500 text-sm mt-0.5">{item.alt}</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -106,33 +108,19 @@ const Gallery = () => {
         </Swiper>
 
         {/* Custom Navigation Arrows */}
-        <div className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white/10 hover:bg-white/20 p-2 rounded-full transition">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="white"
-            className="w-5 h-5"
-          >
+        <div className="custom-prev absolute left-0 top-[45%] -translate-y-1/2 z-10 cursor-pointer bg-black/60 border border-white/20 hover:bg-white/20 hover:border-white/40 p-2.5 rounded-full transition-all duration-200 backdrop-blur-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
         </div>
-        <div className="custom-next absolute right-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white/10 hover:bg-white/20 p-2 rounded-full transition">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="white"
-            className="w-5 h-5"
-          >
+        <div className="custom-next absolute right-0 top-[45%] -translate-y-1/2 z-10 cursor-pointer bg-black/60 border border-white/20 hover:bg-white/20 hover:border-white/40 p-2.5 rounded-full transition-all duration-200 backdrop-blur-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" className="w-5 h-5">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </div>
 
         {/* Custom Pagination */}
-        <div className="custom-pagination flex justify-center mt-6"></div>
+        <div className="custom-pagination flex justify-center mt-4 gap-2"></div>
       </div>
     </section>
   );

@@ -29,14 +29,13 @@ const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
 
-    // ✅ Initialize AOS and trigger animations immediately
     AOS.init({
       duration: 1000,
       once: true,
       startEvent: 'load',
       offset: 0
     });
-    AOS.refreshHard(); // Ensures AOS detects all elements on mount
+    AOS.refreshHard();
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -61,7 +60,7 @@ const Hero = () => {
         </div>
       ))}
 
-      {/* Gradient Overlays */}
+      {/* Gradient Overlays — background kept as-is */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black"></div>
@@ -69,15 +68,15 @@ const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* Top Badge */}
-        <div 
+        <div
           data-aos="fade-down"
           data-aos-delay="0"
           className={`mb-8 transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'
           }`}
         >
-          <span className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/40 rounded-full text-green-400 text-xs sm:text-sm font-semibold tracking-wider uppercase backdrop-blur-md shadow-lg">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          <span className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/20 rounded-full text-gray-300 text-xs sm:text-sm font-semibold tracking-wider uppercase backdrop-blur-md shadow-lg">
+            <span className="w-2 h-2 bg-gray-300 rounded-full animate-pulse"></span>
             Mumbai's Premier Sports Facility
           </span>
         </div>
@@ -89,7 +88,7 @@ const Hero = () => {
             data-aos-duration="800"
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-6 leading-tight"
           >
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-green-600 animate-gradient">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500">
               {slides[currentSlide].title}
             </span>
           </h1>
@@ -103,7 +102,7 @@ const Hero = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="400"
-            className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed"
           >
             Discover world-class facilities for football, cricket, pickleball, and more. Book your slot today and elevate your game.
           </p>
@@ -117,7 +116,7 @@ const Hero = () => {
         >
           <a
             href="#contact"
-            className="group relative px-8 sm:px-12 py-4 sm:py-5 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-bold text-base sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-green-500/50 overflow-hidden"
+            className="group relative px-8 sm:px-12 py-4 sm:py-5 bg-white hover:bg-gray-100 text-black font-bold text-base sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-white/20 overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
               Book Your Slot
@@ -130,11 +129,10 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
           </a>
           <a
             href="#facilities"
-            className="group px-8 sm:px-12 py-4 sm:py-5 border-2 border-green-500 hover:bg-green-500 text-green-400 hover:text-black font-bold text-base sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 backdrop-blur-sm shadow-lg flex items-center gap-2"
+            className="group px-8 sm:px-12 py-4 sm:py-5 border-2 border-gray-400 hover:bg-white hover:border-white text-gray-300 hover:text-black font-bold text-base sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 backdrop-blur-sm shadow-lg flex items-center gap-2"
           >
             View Facilities
             <svg
@@ -157,8 +155,8 @@ const Hero = () => {
             onClick={() => setCurrentSlide(index)}
             className={`h-2 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? 'w-12 bg-gradient-to-r from-green-400 to-emerald-500 shadow-lg shadow-green-500/50'
-                : 'w-2 bg-gray-600 hover:bg-gray-500'
+                ? 'w-12 bg-white shadow-lg shadow-white/30'
+                : 'w-2 bg-gray-600 hover:bg-gray-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

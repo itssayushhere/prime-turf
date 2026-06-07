@@ -31,10 +31,10 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: "#home", label: "Home", icon: "🏠" },
-    { href: "#about", label: "About", icon: "📖" },
-    { href: "#facilities", label: "Facilities", icon: "🏟️" },
-    { href: "#contact", label: "Contact", icon: "📧" },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#facilities", label: "Facilities" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -47,8 +47,8 @@ const Header = () => {
       <header
         className={`fixed top-0 left-0 w-full text-white z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-black/95 backdrop-blur-xl shadow-2xl shadow-green-500/10 border-b border-green-500/30 py-2 sm:py-3"
-            : "bg-black/80 backdrop-blur-md border-b border-green-500/20 py-3 sm:py-4"
+            ? "bg-black/98 backdrop-blur-xl shadow-2xl shadow-black/50 border-b border-white/10 py-2 sm:py-3"
+            : "bg-black/85 backdrop-blur-md border-b border-white/5 py-3 sm:py-4"
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-3 sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ const Header = () => {
               onClick={() => handleNavClick("#home")}
             >
               <div
-                className={`relative shrink-0 rounded-full overflow-hidden ring-2 ring-green-500/40 group-hover:ring-green-400 transition-all duration-300 ${
+                className={`relative shrink-0 rounded-full overflow-hidden ring-2 ring-gray-500/40 group-hover:ring-gray-300 transition-all duration-300 ${
                   scrolled
                     ? "w-10 h-10 sm:w-12 sm:h-12"
                     : "w-12 h-12 sm:w-14 sm:h-14"
@@ -77,13 +77,13 @@ const Header = () => {
               </div>
               <div className="flex flex-col">
                 <span
-                  className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500 transition-all duration-300 ${
+                  className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-400 transition-all duration-300 ${
                     scrolled ? "text-base sm:text-xl" : "text-lg sm:text-2xl"
                   }`}
                 >
                   PR Turf And Sports
                 </span>
-                <span className="text-[9px] sm:text-xs text-gray-400 font-medium -mt-1">
+                <span className="text-[9px] sm:text-xs text-gray-500 font-medium -mt-1">
                   Saki Vihar, Mumbai
                 </span>
               </div>
@@ -101,13 +101,13 @@ const Header = () => {
                   onClick={() => handleNavClick(link.href)}
                   className={`relative group px-3 xl:px-5 py-2.5 rounded-xl font-semibold text-sm xl:text-base transition-all duration-300 ${
                     activeSection === link.href.substring(1)
-                      ? "text-green-400 bg-green-500/10"
-                      : "text-gray-300 hover:text-green-400 hover:bg-white/5"
+                      ? "text-white bg-white/10"
+                      : "text-gray-400 hover:text-white hover:bg-white/5"
                   }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-green-400 to-emerald-500 transition-all duration-300 ${
+                    className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-gray-300 to-gray-500 transition-all duration-300 ${
                       activeSection === link.href.substring(1)
                         ? "w-full"
                         : "w-0 group-hover:w-full"
@@ -119,8 +119,8 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className={`lg:hidden relative p-2 rounded-xl text-green-400 hover:bg-green-500/10 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-300 ${
-                isOpen ? "bg-green-500/10" : ""
+              className={`lg:hidden relative p-2 rounded-xl text-gray-300 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300 ${
+                isOpen ? "bg-white/10" : ""
               }`}
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
@@ -154,7 +154,7 @@ const Header = () => {
             isOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <div className="border-t border-green-500/20 bg-black/95 backdrop-blur-xl">
+          <div className="border-t border-white/10 bg-black/98 backdrop-blur-xl">
             <nav className="max-w-[1400px] mx-auto px-4 sm:px-6 py-4 sm:py-6">
               <div className="flex flex-col gap-2">
                 {navLinks.map((link, index) => (
@@ -164,15 +164,12 @@ const Header = () => {
                     onClick={() => handleNavClick(link.href)}
                     className={`group flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 hover:translate-x-1 ${
                       activeSection === link.href.substring(1)
-                        ? "bg-green-500/10 text-green-400 border border-green-500/30"
-                        : "text-gray-300 hover:text-green-400 hover:bg-white/5"
+                        ? "bg-white/10 text-white border border-white/20"
+                        : "text-gray-400 hover:text-white hover:bg-white/5"
                     }`}
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    <div className="flex items-center gap-3">
-                      {/* <span className="text-lg sm:text-xl">{link.icon}</span> */}
-                      <span>{link.label}</span>
-                    </div>
+                    <span>{link.label}</span>
                     <svg
                       className="w-5 h-5 sm:w-6 sm:h-6 transform group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -191,15 +188,15 @@ const Header = () => {
               </div>
 
               {/* Mobile Menu Footer */}
-              <div className="mt-6 pt-6 border-t border-green-500/20 text-center sm:text-left">
+              <div className="mt-6 pt-6 border-t border-white/10 text-center sm:text-left">
                 <div className="flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-gray-500 gap-2">
                   <span>📍 Saki Vihar, Andheri East</span>
-                  <a href={CALL_LINK} className="text-gray-300 hover:text-green-400">
-                        Call: +91 {PHONE_NUMBER}
-                      </a>
-                      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
-                        WhatsApp: +91 {PHONE_NUMBER}
-                      </a>
+                  <a href={CALL_LINK} className="text-gray-400 hover:text-white">
+                    Call: +91 {PHONE_NUMBER}
+                  </a>
+                  <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                    WhatsApp: +91 {PHONE_NUMBER}
+                  </a>
                 </div>
               </div>
             </nav>
